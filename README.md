@@ -29,11 +29,28 @@ Backend Engineer — Rails × TypeScript × AI 🇯🇵
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-**AI Tools**  
+**Tools**
+![Neovim](https://img.shields.io/badge/Neovim-57A143?style=flat-square&logo=neovim&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
 ![Cursor](https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor&logoColor=white)
 
 </div>
+
+---
+
+## 📋 Career Log
+
+```
+$ git log --oneline --graph --all
+
+* 2748fea (HEAD → main) feat: gistify — Chrome拡張 & Slackアプリ                     2025
+* 91c3d02 perf: API応答速度 ↓80% · 月次解約率 3% → 0.8%                              2024
+* 5b7e819 feat(career): Backend Engineer — SaaS プロダクト開発                        2024
+* f4a209c feat(career): Project Lead — 6名チーム · オフショア開発管理                 2021–2023
+* 3d816b1 feat: buildesk — desk photo SNS · 1.2万PV · アクティブ2,950人              2021
+* a92c174 feat: owarai-judge — お笑い審査員なりきりサービス                           2021
+* 0000001 init: started engineering                                                    2020
+```
 
 ---
 
