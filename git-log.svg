@@ -24,85 +24,84 @@
   <line x1="20" y1="72" x2="740" y2="72" stroke="#21262d" stroke-width="1"/>
 
   <!-- ============================================================ -->
-  <!-- BRANCH LINES (neutral gray — emphasis is on commit colors)   -->
+  <!-- BRANCH LINES (colored by branch)                             -->
   <!-- ============================================================ -->
 
-  <!-- Main line (x=28): y=72 to y=442 -->
-  <line x1="28" y1="72" x2="28" y2="442" stroke="#484f58" stroke-width="2"/>
+  <!-- Main line (green #238636, x=28) -->
+  <line x1="28" y1="72" x2="28" y2="442" stroke="#238636" stroke-width="2"/>
 
-  <!-- Phase2 branch converges upward to leave SaaS (Row1 y=92) -->
-  <!-- Converge: (52,112) → (28,98) -->
-  <line x1="52" y1="112" x2="28" y2="98" stroke="#484f58" stroke-width="2"/>
-  <!-- Phase2 vertical: y=112 to y=183 (transition to Phase1 at midpoint) -->
-  <line x1="52" y1="112" x2="52" y2="183" stroke="#484f58" stroke-width="2"/>
+  <!-- Phase2 (blue #1f6feb, x=52) -->
+  <!-- Converge to leave SaaS (Row1 y=92): (52,112) → (28,98) -->
+  <line x1="52" y1="112" x2="28" y2="98" stroke="#1f6feb" stroke-width="2"/>
+  <!-- Phase2 vertical: y=112 to y=183 -->
+  <line x1="52" y1="112" x2="52" y2="183" stroke="#1f6feb" stroke-width="2"/>
 
+  <!-- Phase1 (orange #f78166, x=52) -->
   <!-- Phase1 vertical: y=183 to y=236 -->
-  <line x1="52" y1="183" x2="52" y2="236" stroke="#484f58" stroke-width="2"/>
-  <!-- Phase1 diverges upward from join SaaS (Row7 y=248): (28,242) → (52,236) -->
-  <line x1="28" y1="242" x2="52" y2="236" stroke="#484f58" stroke-width="2"/>
+  <line x1="52" y1="183" x2="52" y2="236" stroke="#f78166" stroke-width="2"/>
+  <!-- Diverge upward from join SaaS (Row7 y=248): (28,242) → (52,236) -->
+  <line x1="28" y1="242" x2="52" y2="236" stroke="#f78166" stroke-width="2"/>
 
-  <!-- Agency branch diverges from leave WEB受託 (Row8 y=274) going down -->
-  <!-- Diverge: (28,280) → (52,292) -->
-  <line x1="28" y1="280" x2="52" y2="292" stroke="#484f58" stroke-width="2"/>
-  <!-- Agency vertical: y=292 to y=390 -->
-  <line x1="52" y1="292" x2="52" y2="390" stroke="#484f58" stroke-width="2"/>
-  <!-- Agency converges to join WEB受託 (Row13 y=404): (52,390) → (28,398) -->
-  <line x1="52" y1="390" x2="28" y2="398" stroke="#484f58" stroke-width="2"/>
+  <!-- Agency branch (yellow #9a6700, x=52) -->
+  <!-- Diverge from leave WEB受託 (Row8 y=274): (28,280) → (52,292) -->
+  <line x1="28" y1="280" x2="52" y2="292" stroke="#9a6700" stroke-width="2"/>
+  <!-- Vertical: y=292 to y=390 -->
+  <line x1="52" y1="292" x2="52" y2="390" stroke="#9a6700" stroke-width="2"/>
+  <!-- Converge to join WEB受託 (Row13 y=404): (52,390) → (28,398) -->
+  <line x1="52" y1="390" x2="28" y2="398" stroke="#9a6700" stroke-width="2"/>
 
-  <!-- SES sub-branch (x=76) -->
-  <!-- Diverge from agency between Row9 (y=300) and Row10 (y=326): (52,306) → (76,318) -->
-  <line x1="52" y1="306" x2="76" y2="318" stroke="#484f58" stroke-width="2"/>
+  <!-- SES sub-branch (yellow #9a6700, x=76) -->
+  <!-- Diverge between Row9 (y=300) and Row10 (y=326): (52,306) → (76,318) -->
+  <line x1="52" y1="306" x2="76" y2="318" stroke="#9a6700" stroke-width="2"/>
   <!-- Vertical: y=318 to y=334 -->
-  <line x1="76" y1="318" x2="76" y2="334" stroke="#484f58" stroke-width="2"/>
-  <!-- Converge back between Row10 (y=326) and Row11 (y=352): (76,334) → (52,346) -->
-  <line x1="76" y1="334" x2="52" y2="346" stroke="#484f58" stroke-width="2"/>
+  <line x1="76" y1="318" x2="76" y2="334" stroke="#9a6700" stroke-width="2"/>
+  <!-- Converge between Row10 (y=326) and Row11 (y=352): (76,334) → (52,346) -->
+  <line x1="76" y1="334" x2="52" y2="346" stroke="#9a6700" stroke-width="2"/>
 
   <!-- ============================================================ -->
-  <!-- COMMIT CIRCLES (colored by prefix type)                      -->
-  <!-- leave:#ff7b72  join:#7ee787  feat:#e3b341  perf:#f78166      -->
-  <!-- release:#d2a8ff  pdm:#79c0ff  init:#6e7681                   -->
+  <!-- COMMIT CIRCLES (colored by branch)                           -->
   <!-- ============================================================ -->
 
-  <!-- Row 1: y=92, x=28 — leave: toB SaaSスタートアップ -->
+  <!-- Row 1: y=92, x=28 — leave SaaS (main → red) -->
   <circle cx="28" cy="92" r="4" fill="#ff7b72" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 2: y=118, x=52 — pdm: -->
-  <circle cx="52" cy="118" r="4" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 2: y=118, x=52 — pdm (Phase2 → blue) -->
+  <circle cx="52" cy="118" r="4" fill="#58a6ff" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 3: y=144, x=52 — release: -->
-  <circle cx="52" cy="144" r="4" fill="#d2a8ff" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 3: y=144, x=52 — release (Phase2 → blue) -->
+  <circle cx="52" cy="144" r="4" fill="#58a6ff" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 4: y=170, x=52 — feat: Phase2 start -->
-  <circle cx="52" cy="170" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 4: y=170, x=52 — feat Phase2 (Phase2 → blue) -->
+  <circle cx="52" cy="170" r="4" fill="#58a6ff" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 5: y=196, x=52 — perf: CS -->
+  <!-- Row 5: y=196, x=52 — perf CS (Phase1 → orange) -->
   <circle cx="52" cy="196" r="4" fill="#f78166" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 6: y=222, x=52 — perf: API -->
+  <!-- Row 6: y=222, x=52 — perf API (Phase1 → orange) -->
   <circle cx="52" cy="222" r="4" fill="#f78166" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 7: y=248, x=28 — join: toB SaaS -->
+  <!-- Row 7: y=248, x=28 — join SaaS (main → green) -->
   <circle cx="28" cy="248" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 8: y=274, x=28 — leave: WEB受託 -->
+  <!-- Row 8: y=274, x=28 — leave WEB受託 (main → red) -->
   <circle cx="28" cy="274" r="4" fill="#ff7b72" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 9: y=300, x=52 — feat: 採用業務改善 -->
+  <!-- Row 9: y=300, x=52 — feat 採用業務改善 (agency → yellow) -->
   <circle cx="52" cy="300" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 10: y=326, x=76 — feat: SES -->
+  <!-- Row 10: y=326, x=76 — feat SES (agency → yellow) -->
   <circle cx="76" cy="326" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 11: y=352, x=52 — feat: LINEゲーム -->
+  <!-- Row 11: y=352, x=52 — feat LINE (agency → yellow) -->
   <circle cx="52" cy="352" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 12: y=378, x=52 — feat: 賃貸ポータル -->
+  <!-- Row 12: y=378, x=52 — feat 賃貸 (agency → yellow) -->
   <circle cx="52" cy="378" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 13: y=404, x=28 — join: WEB受託 -->
+  <!-- Row 13: y=404, x=28 — join WEB受託 (main → green) -->
   <circle cx="28" cy="404" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 14: y=430, x=28 — init: -->
+  <!-- Row 14: y=430, x=28 — init (main → gray) -->
   <circle cx="28" cy="430" r="4" fill="#6e7681" stroke="#0d1117" stroke-width="1.5"/>
 
   <!-- ============================================================ -->
@@ -118,21 +117,21 @@
 
   <!-- Row 2: pdm (x=52 → text-x=68) -->
   <text y="122" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#79c0ff">pdm:</tspan>
+    <tspan x="68" fill="#58a6ff">pdm:</tspan>
     <tspan fill="#c9d1d9"> プロダクト推進 · AI機能</tspan>
   </text>
   <text x="738" y="122" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
 
   <!-- Row 3: release (x=52 → text-x=68) -->
   <text y="148" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#d2a8ff">release:</tspan>
+    <tspan x="68" fill="#58a6ff">release:</tspan>
     <tspan fill="#c9d1d9"> 管理者向けユーザーアプリ</tspan>
   </text>
   <text x="738" y="148" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
 
   <!-- Row 4: feat Phase2 (x=52 → text-x=68) -->
   <text y="174" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#e3b341">feat:</tspan>
+    <tspan x="68" fill="#58a6ff">feat:</tspan>
     <tspan fill="#c9d1d9"> Phase 2 — PdM兼務開始</tspan>
   </text>
   <text x="738" y="174" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025/03</text>
@@ -179,14 +178,14 @@
   </text>
   <text x="738" y="330" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023</text>
 
-  <!-- Row 11: feat LINEゲーム (x=52 → text-x=68) -->
+  <!-- Row 11: feat LINE (x=52 → text-x=68) -->
   <text y="356" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#e3b341">feat:</tspan>
     <tspan fill="#c9d1d9"> LINEブラウザゲーム · PL</tspan>
   </text>
   <text x="738" y="356" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2022</text>
 
-  <!-- Row 12: feat 賃貸ポータル (x=52 → text-x=68) -->
+  <!-- Row 12: feat 賃貸 (x=52 → text-x=68) -->
   <text y="382" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#e3b341">feat:</tspan>
     <tspan fill="#c9d1d9"> 賃貸物件ポータルサイト</tspan>
