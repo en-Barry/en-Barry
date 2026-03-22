@@ -40,17 +40,7 @@ Backend Engineer — Rails × TypeScript × AI 🇯🇵
 
 ## 📋 Career Log
 
-```
-$ git log --oneline --graph --all
-
-* 2748fea (HEAD → main) feat: gistify — Chrome拡張 & Slackアプリ                     2025
-* 91c3d02 perf: API応答速度 ↓80% · 月次解約率 3% → 0.8%                              2024
-* 5b7e819 feat(career): Backend Engineer — SaaS プロダクト開発                        2024
-* f4a209c feat(career): Project Lead — 6名チーム · オフショア開発管理                 2021–2023
-* 3d816b1 feat: buildesk — desk photo SNS · 1.2万PV · アクティブ2,950人              2021
-* a92c174 feat: owarai-judge — お笑い審査員なりきりサービス                           2021
-* 0000001 init: started engineering                                                    2020
-```
+![career log](git-log.svg)
 
 ---
 
