@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" width="760" height="430">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 456" width="760" height="456">
   <!-- Background -->
-  <rect width="760" height="430" rx="8" fill="#0d1117"/>
+  <rect width="760" height="456" rx="8" fill="#0d1117"/>
 
   <!-- Title bar -->
   <rect width="760" height="36" rx="8" fill="#161b22"/>
@@ -24,175 +24,186 @@
   <line x1="20" y1="72" x2="740" y2="72" stroke="#21262d" stroke-width="1"/>
 
   <!-- ============================================================ -->
-  <!-- BRANCH LINES                                                  -->
+  <!-- BRANCH LINES (neutral gray — emphasis is on commit colors)   -->
   <!-- ============================================================ -->
 
-  <!-- Main line (green #238636, x=28): y=72 to y=416 -->
-  <line x1="28" y1="72" x2="28" y2="416" stroke="#238636" stroke-width="2"/>
+  <!-- Main line (x=28): y=72 to y=442 -->
+  <line x1="28" y1="72" x2="28" y2="442" stroke="#484f58" stroke-width="2"/>
 
-  <!-- Phase2 branch (blue #1f6feb, x=52) — open/ongoing -->
-  <!-- Dashed (open): y=78 to y=98 -->
-  <line x1="52" y1="78" x2="52" y2="98" stroke="#1f6feb" stroke-width="2" stroke-dasharray="3,3"/>
-  <!-- Solid Phase2: y=98 to y=157 (transition to Phase1 color) -->
-  <line x1="52" y1="98" x2="52" y2="157" stroke="#1f6feb" stroke-width="2"/>
+  <!-- Phase2 branch converges upward to leave SaaS (Row1 y=92) -->
+  <!-- Converge: (52,112) → (28,98) -->
+  <line x1="52" y1="112" x2="28" y2="98" stroke="#484f58" stroke-width="2"/>
+  <!-- Phase2 vertical: y=112 to y=183 (transition to Phase1 at midpoint) -->
+  <line x1="52" y1="112" x2="52" y2="183" stroke="#484f58" stroke-width="2"/>
 
-  <!-- Phase1 branch (orange #f78166, x=52) — continues from Phase2 branch point downward -->
-  <!-- Solid Phase1: y=157 to y=210 -->
-  <line x1="52" y1="157" x2="52" y2="210" stroke="#f78166" stroke-width="2"/>
-  <!-- Diverge upward from join SaaS (Row6 y=222): (28,216) → (52,210) -->
-  <line x1="28" y1="216" x2="52" y2="210" stroke="#f78166" stroke-width="2"/>
+  <!-- Phase1 vertical: y=183 to y=236 -->
+  <line x1="52" y1="183" x2="52" y2="236" stroke="#484f58" stroke-width="2"/>
+  <!-- Phase1 diverges upward from join SaaS (Row7 y=248): (28,242) → (52,236) -->
+  <line x1="28" y1="242" x2="52" y2="236" stroke="#484f58" stroke-width="2"/>
 
-  <!-- Agency branch (yellow #9a6700, x=52) -->
-  <!-- Diverge downward from leave WEB受託 (Row7 y=248): (28,254) → (52,266) -->
-  <line x1="28" y1="254" x2="52" y2="266" stroke="#9a6700" stroke-width="2"/>
-  <!-- Vertical: y=266 to y=364 -->
-  <line x1="52" y1="266" x2="52" y2="364" stroke="#9a6700" stroke-width="2"/>
-  <!-- Converge to join WEB受託 (Row12 y=378): (52,364) → (28,372) -->
-  <line x1="52" y1="364" x2="28" y2="372" stroke="#9a6700" stroke-width="2"/>
+  <!-- Agency branch diverges from leave WEB受託 (Row8 y=274) going down -->
+  <!-- Diverge: (28,280) → (52,292) -->
+  <line x1="28" y1="280" x2="52" y2="292" stroke="#484f58" stroke-width="2"/>
+  <!-- Agency vertical: y=292 to y=390 -->
+  <line x1="52" y1="292" x2="52" y2="390" stroke="#484f58" stroke-width="2"/>
+  <!-- Agency converges to join WEB受託 (Row13 y=404): (52,390) → (28,398) -->
+  <line x1="52" y1="390" x2="28" y2="398" stroke="#484f58" stroke-width="2"/>
 
-  <!-- SES sub-branch (yellow #9a6700, x=76) -->
-  <!-- Diverge from agency between Row8 (y=274) and Row9 (y=300): (52,280) → (76,292) -->
-  <line x1="52" y1="280" x2="76" y2="292" stroke="#9a6700" stroke-width="2"/>
-  <!-- Vertical: y=292 to y=308 -->
-  <line x1="76" y1="292" x2="76" y2="308" stroke="#9a6700" stroke-width="2"/>
-  <!-- Converge back to agency between Row9 (y=300) and Row10 (y=326): (76,308) → (52,320) -->
-  <line x1="76" y1="308" x2="52" y2="320" stroke="#9a6700" stroke-width="2"/>
+  <!-- SES sub-branch (x=76) -->
+  <!-- Diverge from agency between Row9 (y=300) and Row10 (y=326): (52,306) → (76,318) -->
+  <line x1="52" y1="306" x2="76" y2="318" stroke="#484f58" stroke-width="2"/>
+  <!-- Vertical: y=318 to y=334 -->
+  <line x1="76" y1="318" x2="76" y2="334" stroke="#484f58" stroke-width="2"/>
+  <!-- Converge back between Row10 (y=326) and Row11 (y=352): (76,334) → (52,346) -->
+  <line x1="76" y1="334" x2="52" y2="346" stroke="#484f58" stroke-width="2"/>
 
   <!-- ============================================================ -->
-  <!-- COMMIT CIRCLES                                               -->
+  <!-- COMMIT CIRCLES (colored by prefix type)                      -->
+  <!-- leave:#ff7b72  join:#7ee787  feat:#e3b341  perf:#f78166      -->
+  <!-- release:#d2a8ff  pdm:#79c0ff  init:#6e7681                   -->
   <!-- ============================================================ -->
 
-  <!-- Row 1: y=92, x=52 — pdm open (blue hollow) -->
-  <circle cx="52" cy="92" r="4" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  <!-- Row 1: y=92, x=28 — leave: toB SaaSスタートアップ -->
+  <circle cx="28" cy="92" r="4" fill="#ff7b72" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 2: y=118, x=52 — release (blue) -->
-  <circle cx="52" cy="118" r="4" fill="#58a6ff" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 2: y=118, x=52 — pdm: -->
+  <circle cx="52" cy="118" r="4" fill="#79c0ff" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 3: y=144, x=52 — feat Phase2 start (blue) -->
-  <circle cx="52" cy="144" r="4" fill="#58a6ff" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 3: y=144, x=52 — release: -->
+  <circle cx="52" cy="144" r="4" fill="#d2a8ff" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 4: y=170, x=52 — perf CSヘルススコア (orange) -->
-  <circle cx="52" cy="170" r="4" fill="#f78166" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 4: y=170, x=52 — feat: Phase2 start -->
+  <circle cx="52" cy="170" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 5: y=196, x=52 — perf API改善 (orange) -->
+  <!-- Row 5: y=196, x=52 — perf: CS -->
   <circle cx="52" cy="196" r="4" fill="#f78166" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 6: y=222, x=28 — join SaaS (green) -->
-  <circle cx="28" cy="222" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 6: y=222, x=52 — perf: API -->
+  <circle cx="52" cy="222" r="4" fill="#f78166" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 7: y=248, x=28 — leave WEB受託 (green) -->
+  <!-- Row 7: y=248, x=28 — join: toB SaaS -->
   <circle cx="28" cy="248" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 8: y=274, x=52 — feat 採用業務改善 (yellow) -->
-  <circle cx="52" cy="274" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 8: y=274, x=28 — leave: WEB受託 -->
+  <circle cx="28" cy="274" r="4" fill="#ff7b72" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 9: y=300, x=76 — feat イベントPF SES (yellow) -->
-  <circle cx="76" cy="300" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 9: y=300, x=52 — feat: 採用業務改善 -->
+  <circle cx="52" cy="300" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 10: y=326, x=52 — feat LINEゲーム (yellow) -->
-  <circle cx="52" cy="326" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 10: y=326, x=76 — feat: SES -->
+  <circle cx="76" cy="326" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 11: y=352, x=52 — feat 賃貸ポータル (yellow) -->
+  <!-- Row 11: y=352, x=52 — feat: LINEゲーム -->
   <circle cx="52" cy="352" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 12: y=378, x=28 — join WEB受託 (green) -->
-  <circle cx="28" cy="378" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 12: y=378, x=52 — feat: 賃貸ポータル -->
+  <circle cx="52" cy="378" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 13: y=404, x=28 — init (gray) -->
-  <circle cx="28" cy="404" r="4" fill="#6e7681" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 13: y=404, x=28 — join: WEB受託 -->
+  <circle cx="28" cy="404" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
+
+  <!-- Row 14: y=430, x=28 — init: -->
+  <circle cx="28" cy="430" r="4" fill="#6e7681" stroke="#0d1117" stroke-width="1.5"/>
 
   <!-- ============================================================ -->
   <!-- TEXT ROWS                                                     -->
   <!-- ============================================================ -->
 
-  <!-- Row 1: pdm open (x=52 → text-x=68) -->
+  <!-- Row 1: leave SaaS (x=28 → text-x=44) -->
   <text y="96" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#58a6ff">pdm:</tspan>
-    <tspan fill="#c9d1d9"> プロダクト推進 · AI機能　━━</tspan>
+    <tspan x="44" fill="#ff7b72">leave:</tspan>
+    <tspan fill="#c9d1d9"> toB SaaSスタートアップ</tspan>
   </text>
-  <text x="738" y="96" text-anchor="end" fill="#58a6ff" font-size="13" font-family="'Courier New', Courier, monospace">2025–</text>
+  <text x="738" y="96" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2026/03</text>
 
-  <!-- Row 2: release (x=52 → text-x=68) -->
+  <!-- Row 2: pdm (x=52 → text-x=68) -->
   <text y="122" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#58a6ff">release:</tspan>
-    <tspan fill="#c9d1d9"> 管理者向けユーザーアプリ</tspan>
+    <tspan x="68" fill="#79c0ff">pdm:</tspan>
+    <tspan fill="#c9d1d9"> プロダクト推進 · AI機能</tspan>
   </text>
   <text x="738" y="122" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
 
-  <!-- Row 3: feat Phase2 (x=52 → text-x=68) -->
+  <!-- Row 3: release (x=52 → text-x=68) -->
   <text y="148" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#58a6ff">feat:</tspan>
+    <tspan x="68" fill="#d2a8ff">release:</tspan>
+    <tspan fill="#c9d1d9"> 管理者向けユーザーアプリ</tspan>
+  </text>
+  <text x="738" y="148" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
+
+  <!-- Row 4: feat Phase2 (x=52 → text-x=68) -->
+  <text y="174" font-size="13" font-family="'Courier New', Courier, monospace">
+    <tspan x="68" fill="#e3b341">feat:</tspan>
     <tspan fill="#c9d1d9"> Phase 2 — PdM兼務開始</tspan>
   </text>
-  <text x="738" y="148" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025/03</text>
+  <text x="738" y="174" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025/03</text>
 
-  <!-- Row 4: perf CS (x=52 → text-x=68) -->
-  <text y="174" font-size="13" font-family="'Courier New', Courier, monospace">
+  <!-- Row 5: perf CS (x=52 → text-x=68) -->
+  <text y="200" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#f78166">perf:</tspan>
     <tspan fill="#c9d1d9"> CSヘルススコア → 解約率 ↓0.8%</tspan>
   </text>
-  <text x="738" y="174" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
+  <text x="738" y="200" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
-  <!-- Row 5: perf API (x=52 → text-x=68) -->
-  <text y="200" font-size="13" font-family="'Courier New', Courier, monospace">
+  <!-- Row 6: perf API (x=52 → text-x=68) -->
+  <text y="226" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#f78166">perf:</tspan>
     <tspan fill="#c9d1d9"> API改善 → レスポンス ↓80%</tspan>
   </text>
-  <text x="738" y="200" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
+  <text x="738" y="226" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
-  <!-- Row 6: join SaaS (x=28 → text-x=44) -->
-  <text y="226" font-size="13" font-family="'Courier New', Courier, monospace">
+  <!-- Row 7: join SaaS (x=28 → text-x=44) -->
+  <text y="252" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="44" fill="#7ee787">join:</tspan>
     <tspan fill="#c9d1d9"> toB SaaSスタートアップ</tspan>
   </text>
-  <text x="738" y="226" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024/01</text>
+  <text x="738" y="252" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024/01</text>
 
-  <!-- Row 7: leave WEB受託 (x=28 → text-x=44) -->
-  <text y="252" font-size="13" font-family="'Courier New', Courier, monospace">
+  <!-- Row 8: leave WEB受託 (x=28 → text-x=44) -->
+  <text y="278" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="44" fill="#ff7b72">leave:</tspan>
     <tspan fill="#c9d1d9"> WEB系受託会社</tspan>
   </text>
-  <text x="738" y="252" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023/12</text>
+  <text x="738" y="278" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023/12</text>
 
-  <!-- Row 8: feat 採用業務改善 (x=52 → text-x=68) -->
-  <text y="278" font-size="13" font-family="'Courier New', Courier, monospace">
+  <!-- Row 9: feat 採用業務改善 (x=52 → text-x=68) -->
+  <text y="304" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#e3b341">feat:</tspan>
     <tspan fill="#c9d1d9"> 採用業務改善プロダクト · PL</tspan>
   </text>
-  <text x="738" y="278" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023</text>
+  <text x="738" y="304" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023</text>
 
-  <!-- Row 9: feat SES (x=76 → text-x=92) -->
-  <text y="304" font-size="13" font-family="'Courier New', Courier, monospace">
+  <!-- Row 10: feat SES (x=76 → text-x=92) -->
+  <text y="330" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="92" fill="#e3b341">feat:</tspan>
     <tspan fill="#c9d1d9"> イベントプラットフォーム — SES</tspan>
   </text>
-  <text x="738" y="304" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023</text>
+  <text x="738" y="330" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023</text>
 
-  <!-- Row 10: feat LINEゲーム (x=52 → text-x=68) -->
-  <text y="330" font-size="13" font-family="'Courier New', Courier, monospace">
+  <!-- Row 11: feat LINEゲーム (x=52 → text-x=68) -->
+  <text y="356" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#e3b341">feat:</tspan>
     <tspan fill="#c9d1d9"> LINEブラウザゲーム · PL</tspan>
   </text>
-  <text x="738" y="330" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2022</text>
+  <text x="738" y="356" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2022</text>
 
-  <!-- Row 11: feat 賃貸ポータル (x=52 → text-x=68) -->
-  <text y="356" font-size="13" font-family="'Courier New', Courier, monospace">
+  <!-- Row 12: feat 賃貸ポータル (x=52 → text-x=68) -->
+  <text y="382" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#e3b341">feat:</tspan>
     <tspan fill="#c9d1d9"> 賃貸物件ポータルサイト</tspan>
   </text>
-  <text x="738" y="356" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2021</text>
+  <text x="738" y="382" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2021</text>
 
-  <!-- Row 12: join WEB受託 (x=28 → text-x=44) -->
-  <text y="382" font-size="13" font-family="'Courier New', Courier, monospace">
+  <!-- Row 13: join WEB受託 (x=28 → text-x=44) -->
+  <text y="408" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="44" fill="#7ee787">join:</tspan>
     <tspan fill="#c9d1d9"> WEB系受託会社</tspan>
   </text>
-  <text x="738" y="382" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2021/11</text>
+  <text x="738" y="408" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2021/11</text>
 
-  <!-- Row 13: init (x=28 → text-x=44) -->
-  <text y="408" font-size="13" font-family="'Courier New', Courier, monospace">
+  <!-- Row 14: init (x=28 → text-x=44) -->
+  <text y="434" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="44" fill="#6e7681">init:</tspan>
     <tspan fill="#6e7681"> started engineering</tspan>
   </text>
-  <text x="738" y="408" text-anchor="end" fill="#6e7681" font-size="13" font-family="'Courier New', Courier, monospace">2020</text>
+  <text x="738" y="434" text-anchor="end" fill="#6e7681" font-size="13" font-family="'Courier New', Courier, monospace">2020</text>
 </svg>
