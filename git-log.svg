@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" width="760" height="330">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 410" width="760" height="410">
   <!-- Background -->
-  <rect width="760" height="330" rx="8" fill="#0d1117"/>
+  <rect width="760" height="410" rx="8" fill="#0d1117"/>
 
   <!-- Title bar -->
   <rect width="760" height="36" rx="8" fill="#161b22"/>
@@ -27,56 +27,72 @@
   <!-- BRANCH LINES (drawn before circles so circles appear on top) -->
   <!-- ============================================================ -->
 
-  <!-- Main line (green): continuous vertical x=28, y=72 to y=310 -->
-  <line x1="28" y1="72" x2="28" y2="310" stroke="#238636" stroke-width="2"/>
+  <!-- Main line (green #238636, x=28): y=72 to y=390 -->
+  <line x1="28" y1="72" x2="28" y2="390" stroke="#238636" stroke-width="2"/>
 
-  <!-- PDM branch (blue, x=52) -->
-  <!-- Upward indicator: continuing beyond top -->
-  <line x1="52" y1="72" x2="52" y2="86" stroke="#1f6feb" stroke-width="2" stroke-dasharray="3,3"/>
-  <!-- Branch vertical: row1 circle down to diverge point -->
+  <!-- PdM branch (blue, x=52, open — ongoing) -->
+  <!-- Dashed upward (open/ongoing) -->
+  <line x1="52" y1="76" x2="52" y2="86" stroke="#1f6feb" stroke-width="2" stroke-dasharray="3,3"/>
+  <!-- Solid segment below dashed -->
   <line x1="52" y1="86" x2="52" y2="98" stroke="#1f6feb" stroke-width="2"/>
-  <!-- Diverge from main (Phase2 commit row2 y=118) up-left to branch y=98 -->
+  <!-- Diverge from Phase2 (y=118) upward to branch y=98 -->
   <line x1="28" y1="112" x2="52" y2="98" stroke="#1f6feb" stroke-width="2"/>
 
+  <!-- SaaS projects branch (orange, x=52) -->
+  <!-- Diverge from Phase2 (y=118) downward -->
+  <line x1="28" y1="124" x2="52" y2="136" stroke="#f78166" stroke-width="2"/>
+  <!-- Branch vertical: y=136 to y=182 (through Row3 y=144, Row4 y=170) -->
+  <line x1="52" y1="136" x2="52" y2="182" stroke="#f78166" stroke-width="2"/>
+  <!-- Converge to join SaaS (y=196) upward -->
+  <line x1="52" y1="182" x2="28" y2="190" stroke="#f78166" stroke-width="2"/>
+
   <!-- Agency branch (yellow, x=52) -->
-  <!-- Diverge from main (merge commit row5 y=196) down-right -->
-  <line x1="28" y1="202" x2="52" y2="218" stroke="#9a6700" stroke-width="2"/>
-  <!-- Branch vertical between row6 and row7 -->
-  <line x1="52" y1="218" x2="52" y2="242" stroke="#9a6700" stroke-width="2"/>
-  <line x1="52" y1="242" x2="52" y2="262" stroke="#9a6700" stroke-width="2"/>
-  <!-- Converge back to main (portfolio commit row8 y=274) -->
-  <line x1="52" y1="262" x2="28" y2="268" stroke="#9a6700" stroke-width="2"/>
+  <!-- Diverge from leave受託 (y=222) downward -->
+  <line x1="28" y1="228" x2="52" y2="240" stroke="#9a6700" stroke-width="2"/>
+  <!-- Branch vertical: y=240 to y=338 (through Row7 y=248, Row8 y=274, Row9 y=300, Row10 y=326) -->
+  <line x1="52" y1="240" x2="52" y2="338" stroke="#9a6700" stroke-width="2"/>
+  <!-- Converge to join受託 (y=352) upward -->
+  <line x1="52" y1="338" x2="28" y2="346" stroke="#9a6700" stroke-width="2"/>
 
   <!-- ============================================================ -->
   <!-- COMMIT CIRCLES                                               -->
   <!-- ============================================================ -->
 
-  <!-- Row 1: pdm (52, 92) blue -->
+  <!-- Row 1: pdm open (52, 92) blue -->
   <circle cx="52" cy="92" r="4" fill="#58a6ff" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 2: Phase 2 (28, 118) green — PDM diverge point -->
+  <!-- Row 2: Phase 2 (28, 118) green -->
   <circle cx="28" cy="118" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 3: gistify (28, 144) green -->
-  <circle cx="28" cy="144" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 3: CSヘルススコア (52, 144) orange -->
+  <circle cx="52" cy="144" r="4" fill="#f78166" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 4: perf (28, 170) orange -->
-  <circle cx="28" cy="170" r="4" fill="#f78166" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 4: API改善 (52, 170) orange -->
+  <circle cx="52" cy="170" r="4" fill="#f78166" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 5: Paintnote join merge (28, 196) green — agency merge point -->
-  <circle cx="28" cy="196" r="5" fill="#7ee787" stroke="#238636" stroke-width="2"/>
+  <!-- Row 5: join SaaS (28, 196) green -->
+  <circle cx="28" cy="196" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 6: Gigoo PL (52, 222) yellow -->
-  <circle cx="52" cy="222" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 6: leave受託 (28, 222) green -->
+  <circle cx="28" cy="222" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 7: Gigoo join (52, 248) yellow -->
+  <!-- Row 7: 採用業務改善 (52, 248) yellow -->
   <circle cx="52" cy="248" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 8: portfolio (28, 274) green -->
-  <circle cx="28" cy="274" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 8: イベントPF (52, 274) yellow -->
+  <circle cx="52" cy="274" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 9: init (28, 300) gray -->
-  <circle cx="28" cy="300" r="4" fill="#6e7681" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 9: LINEゲーム (52, 300) yellow -->
+  <circle cx="52" cy="300" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
+
+  <!-- Row 10: 賃貸ポータル (52, 326) yellow -->
+  <circle cx="52" cy="326" r="4" fill="#e3b341" stroke="#0d1117" stroke-width="1.5"/>
+
+  <!-- Row 11: join受託 (28, 352) green -->
+  <circle cx="28" cy="352" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
+
+  <!-- Row 12: init (28, 378) gray -->
+  <circle cx="28" cy="378" r="4" fill="#6e7681" stroke="#0d1117" stroke-width="1.5"/>
 
   <!-- ============================================================ -->
   <!-- TEXT ROWS                                                     -->
@@ -92,56 +108,77 @@
   <!-- Row 2: Phase 2 (main commit, text x=44) -->
   <text y="122" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="44" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> SaaSスタートアップ Phase 2 — エンジニア</tspan>
+    <tspan fill="#c9d1d9"> Phase 2 — PdM兼務開始 [Phase1 merge]</tspan>
   </text>
-  <text x="738" y="122" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
+  <text x="738" y="122" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025/03</text>
 
-  <!-- Row 3: gistify (main commit, text x=44) -->
+  <!-- Row 3: CSヘルススコア (branch commit, text x=68) -->
   <text y="148" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="44" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> gistify — Chrome拡張 &amp; Slackアプリ</tspan>
+    <tspan x="68" fill="#f78166">perf:</tspan>
+    <tspan fill="#c9d1d9"> CSヘルススコア → 解約率 ↓0.8%</tspan>
   </text>
-  <text x="738" y="148" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
+  <text x="738" y="148" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
-  <!-- Row 4: perf (main commit, text x=44) -->
+  <!-- Row 4: API改善 (branch commit, text x=68) -->
   <text y="174" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="44" fill="#f78166">perf:</tspan>
-    <tspan fill="#c9d1d9"> API改善 ↓80% · 解約率 3% → 0.8%</tspan>
+    <tspan x="68" fill="#f78166">perf:</tspan>
+    <tspan fill="#c9d1d9"> API改善 → レスポンス ↓80%</tspan>
   </text>
   <text x="738" y="174" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
-  <!-- Row 5: Paintnote join merge (main commit, text x=44) -->
+  <!-- Row 5: join SaaS (main commit, text x=44) -->
   <text y="200" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="44" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> SaaSスタートアップ — Backend Engineer [SaaS転換]</tspan>
+    <tspan x="44" fill="#7ee787">join:</tspan>
+    <tspan fill="#c9d1d9"> SaaSスタートアップ — Phase 1 start</tspan>
   </text>
-  <text x="738" y="200" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
+  <text x="738" y="200" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024/01</text>
 
-  <!-- Row 6: Gigoo PL (branch commit, text x=68) -->
+  <!-- Row 6: leave受託 (main commit, text x=44) -->
   <text y="226" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> 受託開発 — Project Lead · オフショア6名</tspan>
+    <tspan x="44" fill="#7ee787">leave:</tspan>
+    <tspan fill="#c9d1d9"> 受託開発会社</tspan>
   </text>
-  <text x="738" y="226" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2022–2023</text>
+  <text x="738" y="226" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023/12</text>
 
-  <!-- Row 7: Gigoo join (branch commit, text x=68) -->
+  <!-- Row 7: 採用業務改善 (branch commit, text x=68) -->
   <text y="252" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> 受託開発 — Backend Engineer</tspan>
+    <tspan fill="#c9d1d9"> 採用業務改善プロダクト · PL</tspan>
   </text>
-  <text x="738" y="252" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2021</text>
+  <text x="738" y="252" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023</text>
 
-  <!-- Row 8: portfolio (main commit, text x=44) -->
+  <!-- Row 8: イベントPF (branch commit, text x=68) -->
   <text y="278" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="44" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> buildesk &amp; owarai-judge — ポートフォリオ</tspan>
+    <tspan x="68" fill="#e3b341">feat:</tspan>
+    <tspan fill="#c9d1d9"> イベントプラットフォーム — SES · GCP</tspan>
   </text>
-  <text x="738" y="278" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2021</text>
+  <text x="738" y="278" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023</text>
 
-  <!-- Row 9: init (main commit, text x=44) -->
+  <!-- Row 9: LINEゲーム (branch commit, text x=68) -->
   <text y="304" font-size="13" font-family="'Courier New', Courier, monospace">
+    <tspan x="68" fill="#e3b341">feat:</tspan>
+    <tspan fill="#c9d1d9"> LINEブラウザゲーム · PL</tspan>
+  </text>
+  <text x="738" y="304" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2022</text>
+
+  <!-- Row 10: 賃貸ポータル (branch commit, text x=68) -->
+  <text y="330" font-size="13" font-family="'Courier New', Courier, monospace">
+    <tspan x="68" fill="#e3b341">feat:</tspan>
+    <tspan fill="#c9d1d9"> 賃貸物件ポータルサイト</tspan>
+  </text>
+  <text x="738" y="330" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2021</text>
+
+  <!-- Row 11: join受託 (main commit, text x=44) -->
+  <text y="356" font-size="13" font-family="'Courier New', Courier, monospace">
+    <tspan x="44" fill="#7ee787">join:</tspan>
+    <tspan fill="#c9d1d9"> 受託開発会社</tspan>
+  </text>
+  <text x="738" y="356" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2021/11</text>
+
+  <!-- Row 12: init (main commit, text x=44) -->
+  <text y="382" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="44" fill="#6e7681">init:</tspan>
     <tspan fill="#6e7681"> started engineering</tspan>
   </text>
-  <text x="738" y="304" text-anchor="end" fill="#6e7681" font-size="13" font-family="'Courier New', Courier, monospace">2020</text>
+  <text x="738" y="382" text-anchor="end" fill="#6e7681" font-size="13" font-family="'Courier New', Courier, monospace">2020</text>
 </svg>
