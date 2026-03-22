@@ -92,7 +92,7 @@
   <!-- Row 2: Phase 2 (main commit, text x=44) -->
   <text y="122" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="44" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> Paintnote Phase 2 — エンジニア</tspan>
+    <tspan fill="#c9d1d9"> SaaSスタートアップ Phase 2 — エンジニア</tspan>
   </text>
   <text x="738" y="122" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
 
@@ -113,21 +113,21 @@
   <!-- Row 5: Paintnote join merge (main commit, text x=44) -->
   <text y="200" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="44" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> Paintnote — Backend Engineer [SaaS転換]</tspan>
+    <tspan fill="#c9d1d9"> SaaSスタートアップ — Backend Engineer [SaaS転換]</tspan>
   </text>
   <text x="738" y="200" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
   <!-- Row 6: Gigoo PL (branch commit, text x=68) -->
   <text y="226" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> Gigoo — Project Lead · オフショア6名</tspan>
+    <tspan fill="#c9d1d9"> 受託開発 — Project Lead · オフショア6名</tspan>
   </text>
   <text x="738" y="226" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2022–2023</text>
 
   <!-- Row 7: Gigoo join (branch commit, text x=68) -->
   <text y="252" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> Gigoo — Backend Engineer</tspan>
+    <tspan fill="#c9d1d9"> 受託開発 — Backend Engineer</tspan>
   </text>
   <text x="738" y="252" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2021</text>
 
