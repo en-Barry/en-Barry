@@ -46,18 +46,6 @@ Backend Engineer — Rails × TypeScript × AI 🇯🇵
 | 2021 | [**buildesk**](https://buildesk.app) | デスク周りに特化した写真投稿SNS | Rails · React |
 | 2021 | [**owarai-judge**](https://www.owarai-judge.com) | お笑い賞レースの審査員なりきりサービス | Rails · TypeScript |
 
----
-
-## 📊 Stats
-
-<div align="center">
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=en-Barry&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=en-Barry&layout=compact&theme=tokyonight&hide_border=true" />
-
-</div>
-
----
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=100&section=footer" width="100%"/>
