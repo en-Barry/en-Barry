@@ -118,7 +118,7 @@
   <!-- Row 2: feat (x=52 → text-x=68) -->
   <text y="122" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#58a6ff">feat:</tspan>
-    <tspan fill="#c9d1d9"> プロダクト推進 · AI機能 · PdM</tspan>
+    <tspan fill="#c9d1d9"> プロダクト推進 · AI機能企画 · PdM</tspan>
   </text>
   <text x="738" y="122" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
 
