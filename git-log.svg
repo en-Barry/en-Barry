@@ -139,7 +139,7 @@
   <!-- Row 5: perf CS (x=52 → text-x=68) -->
   <text y="200" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#f78166">perf:</tspan>
-    <tspan fill="#c9d1d9"> CSヘルススコア → 解約率 ↓0.8%</tspan>
+    <tspan fill="#c9d1d9"> CSヘルススコア → 解約率 ↓2.2%</tspan>
   </text>
   <text x="738" y="200" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
