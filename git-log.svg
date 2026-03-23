@@ -118,35 +118,35 @@
   <!-- Row 2: feat (x=52 → text-x=68) -->
   <text y="122" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#58a6ff">feat:</tspan>
-    <tspan fill="#c9d1d9"> プロダクト推進 · AI機能企画 · PdM</tspan>
+    <tspan fill="#c9d1d9"> プロダクト推進 · AI機能企画 - PdM</tspan>
   </text>
   <text x="738" y="122" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
 
   <!-- Row 3: release (x=52 → text-x=68) -->
   <text y="148" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#58a6ff">release:</tspan>
-    <tspan fill="#c9d1d9"> 管理者向けユーザーアプリ · PdM</tspan>
+    <tspan fill="#c9d1d9"> 管理者向けユーザーアプリ - PdM</tspan>
   </text>
   <text x="738" y="148" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
 
   <!-- Row 4: perf CS (x=52 → text-x=68) -->
   <text y="174" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#58a6ff">perf:</tspan>
-    <tspan fill="#c9d1d9"> CSヘルススコア → 解約率 ↓2.2% · Eng</tspan>
+    <tspan fill="#c9d1d9"> CSヘルススコア → 解約率 ↓2.2% - Eng</tspan>
   </text>
   <text x="738" y="174" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
   <!-- Row 5: perf API (x=52 → text-x=68) -->
   <text y="200" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#58a6ff">perf:</tspan>
-    <tspan fill="#c9d1d9"> API改善 → レスポンス ↓80% · Eng</tspan>
+    <tspan fill="#c9d1d9"> API改善 → レスポンス ↓80% - Eng</tspan>
   </text>
   <text x="738" y="200" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
   <!-- Row 6: feat SaaS実装 (x=52 → text-x=68) -->
   <text y="226" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#58a6ff">feat:</tspan>
-    <tspan fill="#c9d1d9"> 現場仕事スケジュール管理toB SaaS · Eng</tspan>
+    <tspan fill="#c9d1d9"> 現場仕事スケジュール管理toB SaaS - Eng</tspan>
   </text>
   <text x="738" y="226" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024/01</text>
 
@@ -167,7 +167,7 @@
   <!-- Row 9: feat 採用業務改善 (x=52 → text-x=68) -->
   <text y="304" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> 採用業務改善プロダクト · PL</tspan>
+    <tspan fill="#c9d1d9"> 採用業務改善プロダクト - PL</tspan>
   </text>
   <text x="738" y="304" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2023</text>
 
@@ -181,7 +181,7 @@
   <!-- Row 11: feat LINE (x=52 → text-x=68) -->
   <text y="356" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#e3b341">feat:</tspan>
-    <tspan fill="#c9d1d9"> LINEブラウザゲーム · PL</tspan>
+    <tspan fill="#c9d1d9"> LINEブラウザゲーム - PL</tspan>
   </text>
   <text x="738" y="356" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2022</text>
 
