@@ -129,26 +129,26 @@
   </text>
   <text x="738" y="148" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
 
-  <!-- Row 4: feat Phase2 (x=52 → text-x=68) -->
+  <!-- Row 4: perf CS (x=52 → text-x=68) -->
   <text y="174" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#58a6ff">feat:</tspan>
-    <tspan fill="#c9d1d9"> 現場仕事スケジュール管理SaaS · toB · 実装</tspan>
+    <tspan x="68" fill="#58a6ff">perf:</tspan>
+    <tspan fill="#c9d1d9"> CSヘルススコア → 解約率 ↓2.2% · Eng</tspan>
   </text>
-  <text x="738" y="174" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025/03</text>
+  <text x="738" y="174" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
-  <!-- Row 5: perf CS (x=52 → text-x=68) -->
+  <!-- Row 5: perf API (x=52 → text-x=68) -->
   <text y="200" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#58a6ff">perf:</tspan>
-    <tspan fill="#c9d1d9"> CSヘルススコア → 解約率 ↓2.2%</tspan>
+    <tspan fill="#c9d1d9"> API改善 → レスポンス ↓80% · Eng</tspan>
   </text>
   <text x="738" y="200" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
-  <!-- Row 6: perf API (x=52 → text-x=68) -->
+  <!-- Row 6: feat SaaS実装 (x=52 → text-x=68) -->
   <text y="226" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#58a6ff">perf:</tspan>
-    <tspan fill="#c9d1d9"> API改善 → レスポンス ↓80%</tspan>
+    <tspan x="68" fill="#58a6ff">feat:</tspan>
+    <tspan fill="#c9d1d9"> 現場仕事スケジュール管理toB SaaS · 実装</tspan>
   </text>
-  <text x="738" y="226" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
+  <text x="738" y="226" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024/01</text>
 
   <!-- Row 7: join SaaS (x=28 → text-x=44) -->
   <text y="252" font-size="13" font-family="'Courier New', Courier, monospace">
