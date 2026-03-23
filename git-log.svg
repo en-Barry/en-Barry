@@ -36,11 +36,11 @@
   <!-- Phase2 vertical: y=112 to y=183 -->
   <line x1="52" y1="112" x2="52" y2="183" stroke="#1f6feb" stroke-width="2"/>
 
-  <!-- Phase1 (orange #f78166, x=52) -->
+  <!-- Phase1 (blue #1f6feb, x=52) — same branch as Phase2 -->
   <!-- Phase1 vertical: y=183 to y=236 -->
-  <line x1="52" y1="183" x2="52" y2="236" stroke="#f78166" stroke-width="2"/>
+  <line x1="52" y1="183" x2="52" y2="236" stroke="#1f6feb" stroke-width="2"/>
   <!-- Diverge upward from join SaaS (Row7 y=248): (28,242) → (52,236) -->
-  <line x1="28" y1="242" x2="52" y2="236" stroke="#f78166" stroke-width="2"/>
+  <line x1="28" y1="242" x2="52" y2="236" stroke="#1f6feb" stroke-width="2"/>
 
   <!-- Agency branch (yellow #9a6700, x=52) -->
   <!-- Diverge from leave WEB受託 (Row8 y=274): (28,280) → (52,292) -->
@@ -74,11 +74,11 @@
   <!-- Row 4: y=170, x=52 — feat Phase2 (Phase2 → blue) -->
   <circle cx="52" cy="170" r="4" fill="#58a6ff" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 5: y=196, x=52 — perf CS (Phase1 → orange) -->
-  <circle cx="52" cy="196" r="4" fill="#f78166" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 5: y=196, x=52 — perf CS (Phase1 → blue, same as Phase2) -->
+  <circle cx="52" cy="196" r="4" fill="#58a6ff" stroke="#0d1117" stroke-width="1.5"/>
 
-  <!-- Row 6: y=222, x=52 — perf API (Phase1 → orange) -->
-  <circle cx="52" cy="222" r="4" fill="#f78166" stroke="#0d1117" stroke-width="1.5"/>
+  <!-- Row 6: y=222, x=52 — perf API (Phase1 → blue, same as Phase2) -->
+  <circle cx="52" cy="222" r="4" fill="#58a6ff" stroke="#0d1117" stroke-width="1.5"/>
 
   <!-- Row 7: y=248, x=28 — join SaaS (main → green) -->
   <circle cx="28" cy="248" r="4" fill="#7ee787" stroke="#0d1117" stroke-width="1.5"/>
@@ -115,10 +115,10 @@
   </text>
   <text x="738" y="96" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2026/03</text>
 
-  <!-- Row 2: pdm (x=52 → text-x=68) -->
+  <!-- Row 2: feat (x=52 → text-x=68) -->
   <text y="122" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#58a6ff">pdm:</tspan>
-    <tspan fill="#c9d1d9"> プロダクト推進 · AI機能</tspan>
+    <tspan x="68" fill="#58a6ff">feat:</tspan>
+    <tspan fill="#c9d1d9"> プロダクト推進 · AI機能 · PdM</tspan>
   </text>
   <text x="738" y="122" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025</text>
 
@@ -132,20 +132,20 @@
   <!-- Row 4: feat Phase2 (x=52 → text-x=68) -->
   <text y="174" font-size="13" font-family="'Courier New', Courier, monospace">
     <tspan x="68" fill="#58a6ff">feat:</tspan>
-    <tspan fill="#c9d1d9"> Phase 2 — PdM兼務開始</tspan>
+    <tspan fill="#c9d1d9"> Phase 2</tspan>
   </text>
   <text x="738" y="174" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2025/03</text>
 
   <!-- Row 5: perf CS (x=52 → text-x=68) -->
   <text y="200" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#f78166">perf:</tspan>
+    <tspan x="68" fill="#58a6ff">perf:</tspan>
     <tspan fill="#c9d1d9"> CSヘルススコア → 解約率 ↓2.2%</tspan>
   </text>
   <text x="738" y="200" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
 
   <!-- Row 6: perf API (x=52 → text-x=68) -->
   <text y="226" font-size="13" font-family="'Courier New', Courier, monospace">
-    <tspan x="68" fill="#f78166">perf:</tspan>
+    <tspan x="68" fill="#58a6ff">perf:</tspan>
     <tspan fill="#c9d1d9"> API改善 → レスポンス ↓80%</tspan>
   </text>
   <text x="738" y="226" text-anchor="end" fill="#79c0ff" font-size="13" font-family="'Courier New', Courier, monospace">2024</text>
