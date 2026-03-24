@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=180&section=header&text=Ryusei%20Obama&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=45" width="100%"/>
 
-Backend Engineer — Rails × TypeScript × AI 🇯🇵
+Backend Engineer — Rails × AI 🇯🇵
 
 </div>
 
