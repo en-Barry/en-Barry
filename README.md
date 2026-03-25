@@ -51,7 +51,7 @@ Backend Engineer — Rails × AI 🇯🇵
 | 2025 | [**gistify**](https://github.com/en-Barry/gistify-extension) | 文字起こしをAIで要約するChrome拡張 & Slackアプリ | TypeScript · Deno · OpenAI API |
 | 2025 | 🔒 **paintnote-expense-pdf-to-csv** | Suica交通費申請CSV変換ツール | Python |
 | 2021 | [**buildesk**](https://github.com/en-Barry/buildesk) | デスク周りに特化した写真投稿SNS | Rails · React |
-| 2021 | [**owarai-judge**](https://github.com/en-Barry/owarai-judge) | お笑い賞レースの審査員なりきりサービス | Rails · React |
+| 2021 | [**owarai-judge**](https://github.com/en-Barry/owarai_judge) | お笑い賞レースの審査員なりきりサービス | Rails · React |
 
 
 <div align="center">
